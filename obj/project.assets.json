@@ -6825,11 +6825,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lester\\Source\\Repos\\KHANew\\KHANew.csproj",
+      "projectUniqueName": "C:\\Users\\Lester\\Documents\\GitHub\\KHANew\\KHANew.csproj",
       "projectName": "KHANew",
-      "projectPath": "C:\\Users\\Lester\\Source\\Repos\\KHANew\\KHANew.csproj",
+      "projectPath": "C:\\Users\\Lester\\Documents\\GitHub\\KHANew\\KHANew.csproj",
       "packagesPath": "C:\\Users\\Lester\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lester\\Source\\Repos\\KHANew\\obj\\",
+      "outputPath": "C:\\Users\\Lester\\Documents\\GitHub\\KHANew\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
