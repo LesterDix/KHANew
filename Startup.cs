@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using KHANew.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace KHANew
 {
@@ -24,6 +26,9 @@ namespace KHANew
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            var connection = @"Server=QUASAR\QUASARMETRIC;Database=KHALAMAZI;Trusted_Connection=True;";
+            services.AddDbContext<KHALAMAZIContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

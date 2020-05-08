@@ -1,0 +1,143 @@
+﻿@model KHANew.Models.Shipment
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Shipment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ShipDate" class="control-label"></label>
+                <input asp-for="ShipDate" class="form-control" />
+                <span asp-validation-for="ShipDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShipDow" class="control-label"></label>
+                <input asp-for="ShipDow" class="form-control" />
+                <span asp-validation-for="ShipDow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestCode" class="control-label"></label>
+                <input asp-for="DestCode" class="form-control" />
+                <span asp-validation-for="DestCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AwbNo" class="control-label"></label>
+                <input asp-for="AwbNo" class="form-control" />
+                <span asp-validation-for="AwbNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Flight1" class="control-label"></label>
+                <input asp-for="Flight1" class="form-control" />
+                <span asp-validation-for="Flight1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Flight2" class="control-label"></label>
+                <input asp-for="Flight2" class="form-control" />
+                <span asp-validation-for="Flight2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Flight3" class="control-label"></label>
+                <input asp-for="Flight3" class="form-control" />
+                <span asp-validation-for="Flight3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Routing" class="control-label"></label>
+                <input asp-for="Routing" class="form-control" />
+                <span asp-validation-for="Routing" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Container1" class="control-label"></label>
+                <input asp-for="Container1" class="form-control" />
+                <span asp-validation-for="Container1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Container2" class="control-label"></label>
+                <input asp-for="Container2" class="form-control" />
+                <span asp-validation-for="Container2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Container3" class="control-label"></label>
+                <input asp-for="Container3" class="form-control" />
+                <span asp-validation-for="Container3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Container4" class="control-label"></label>
+                <input asp-for="Container4" class="form-control" />
+                <span asp-validation-for="Container4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Container5" class="control-label"></label>
+                <input asp-for="Container5" class="form-control" />
+                <span asp-validation-for="Container5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RateCode" class="control-label"></label>
+                <input asp-for="RateCode" class="form-control" />
+                <span asp-validation-for="RateCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RateUsdKg" class="control-label"></label>
+                <input asp-for="RateUsdKg" class="form-control" />
+                <span asp-validation-for="RateUsdKg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherUsdKg" class="control-label"></label>
+                <input asp-for="OtherUsdKg" class="form-control" />
+                <span asp-validation-for="OtherUsdKg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OtherUsdShpmnt" class="control-label"></label>
+                <input asp-for="OtherUsdShpmnt" class="form-control" />
+                <span asp-validation-for="OtherUsdShpmnt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KgBooked" class="control-label"></label>
+                <input asp-for="KgBooked" class="form-control" />
+                <span asp-validation-for="KgBooked" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KgActual" class="control-label"></label>
+                <input asp-for="KgActual" class="form-control" />
+                <span asp-validation-for="KgActual" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="KgCharged" class="control-label"></label>
+                <input asp-for="KgCharged" class="form-control" />
+                <span asp-validation-for="KgCharged" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalChgUsd" class="control-label"></label>
+                <input asp-for="TotalChgUsd" class="form-control" />
+                <span asp-validation-for="TotalChgUsd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sundry1" class="control-label"></label>
+                <input asp-for="Sundry1" class="form-control" />
+                <span asp-validation-for="Sundry1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sundry2" class="control-label"></label>
+                <input asp-for="Sundry2" class="form-control" />
+                <span asp-validation-for="Sundry2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

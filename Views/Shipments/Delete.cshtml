@@ -1,0 +1,159 @@
+﻿@model KHANew.Models.Shipment
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Shipment</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ShipDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ShipDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ShipDow)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ShipDow)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DestCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DestCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AwbNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AwbNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Flight1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Flight1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Flight2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Flight2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Flight3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Flight3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Routing)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Routing)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Container1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Container1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Container2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Container2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Container3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Container3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Container4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Container4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Container5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Container5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RateCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RateCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RateUsdKg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RateUsdKg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OtherUsdKg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OtherUsdKg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OtherUsdShpmnt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OtherUsdShpmnt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KgBooked)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KgBooked)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KgActual)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KgActual)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KgCharged)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KgCharged)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalChgUsd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TotalChgUsd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sundry1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sundry1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sundry2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sundry2)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ShipId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

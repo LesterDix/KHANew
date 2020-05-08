@@ -1,0 +1,167 @@
+﻿@model IEnumerable<KHANew.Models.Shipment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ShipDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShipDow)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AwbNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Routing)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Container1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Container2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Container3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Container4)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Container5)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RateCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RateUsdKg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtherUsdKg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OtherUsdShpmnt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KgBooked)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KgActual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KgCharged)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalChgUsd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sundry1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sundry2)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShipDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShipDow)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AwbNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Routing)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Container1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Container2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Container3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Container4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Container5)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RateCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RateUsdKg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtherUsdKg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OtherUsdShpmnt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KgBooked)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KgActual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KgCharged)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalChgUsd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sundry1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sundry2)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ShipId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ShipId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ShipId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
